@@ -7,13 +7,13 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "dstidf"
 		},
-		"AzureSqlLinkedService_connectionString": {
-			"type": "secureString",
-			"metadata": "Secure string for 'connectionString' of 'AzureSqlLinkedService'"
-		},
 		"AzureSQLDWLinkedService_connectionString": {
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'AzureSQLDWLinkedService'"
+		},
+		"AzureSqlLinkedService_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSqlLinkedService'"
 		},
 		"AzureStorageLinkedService_connectionString": {
 			"type": "secureString",
@@ -46,11 +46,11 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"AzureSqlLinkedService_connectionString": {
-						"value": "[parameters('AzureSqlLinkedService_connectionString')]"
-					},
 					"AzureSQLDWLinkedService_connectionString": {
 						"value": "[parameters('AzureSQLDWLinkedService_connectionString')]"
+					},
+					"AzureSqlLinkedService_connectionString": {
+						"value": "[parameters('AzureSqlLinkedService_connectionString')]"
 					},
 					"AzureStorageLinkedService_connectionString": {
 						"value": "[parameters('AzureStorageLinkedService_connectionString')]"

@@ -5,10 +5,10 @@
 		"factoryName": {
 			"value": "dstidf"
 		},
-		"AzureSqlLinkedService_connectionString": {
+		"AzureSQLDWLinkedService_connectionString": {
 			"value": ""
 		},
-		"AzureSQLDWLinkedService_connectionString": {
+		"AzureSqlLinkedService_connectionString": {
 			"value": ""
 		},
 		"AzureStorageLinkedService_connectionString": {
