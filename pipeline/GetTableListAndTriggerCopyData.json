@@ -1,0 +1,7 @@
+{
+	"name": "GetTableListAndTriggerCopyData",
+	"properties": {
+		"description": "A pipeline to get the table list and trigger the previous pipeline to copydata",
+		"annotations": []
+	}
+}
