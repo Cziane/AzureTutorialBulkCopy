@@ -2,8 +2,16 @@
 	"name": "IterateAndCopySQLTables",
 	"properties": {
 		"description": "Pipeline copying every SQL Table",
+		"activities": [
+			{
+				"name": "IterateSQLTables",
+				"type": "ForEach",
+				"dependsOn": [],
+				"userProperties": []
+			}
+		],
 		"parameters": {
-			"tablelist": {
+			"tableList": {
 				"type": "array"
 			}
 		},
