@@ -1,0 +1,31 @@
+{
+	"name": "AzureSQLDWDataset",
+	"properties": {
+		"description": "Azure Dataset for elastic pool in Azure Synapse",
+		"linkedServiceName": {
+			"referenceName": "AzureSQLDWLinkedService",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DWTableName": {
+				"type": "string"
+			},
+			"DWSchema": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": {
+				"value": "@dataset().DWSchema",
+				"type": "Expression"
+			},
+			"table": {
+				"value": "@dataset().DWTableName",
+				"type": "Expression"
+			}
+		}
+	}
+}
